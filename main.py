@@ -63,7 +63,7 @@ class TrafficNetwork:
         self.vertices[id] = vertice
         return vertice
     
-    def aresta(self, id: int, source_id: int, target_id: int, capacity: float) -> Aresta:
+    def add_aresta(self, id: int, source_id: int, target_id: int, capacity: float) -> Aresta:
         """Adiciona uma nova aresta à rede."""
         source = self.vertices[source_id]
         target = self.vertices[target_id]
